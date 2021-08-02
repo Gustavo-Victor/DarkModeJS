@@ -1,0 +1,49 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*corpo*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background 0.5s linear, color 0.5s linear;    
+}
+
+/*div do input e do label*/
+.container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/*label*/
+.container label{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.container input[type=checkbox]{
+    visibility: hidden;
+}
+
+/*quando o body tiver com a classe dark*/
+body.dark{
+    background-color: black;
+    color: white;
+}
+
+/*estilos para o label quando body estiver dark*/
+body.dark .container label{
+    background-color: white;
+}
